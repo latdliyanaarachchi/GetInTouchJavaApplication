@@ -25,8 +25,9 @@ public class UserController {
         user.setEmail(request.getEmail());
         user.setName(request.getName());
         user.setPassword(request.getPassword());
-        userService.create(user);
+        User userDb = userService.create(user);
         UserCreateResponse response = new UserCreateResponse();
+        response.setId(userDb.getId());
         return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 }

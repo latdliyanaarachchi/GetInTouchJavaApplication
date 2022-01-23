@@ -14,7 +14,7 @@
 	<name>getInTouch</name>
 	<description>Project for MAD subject</description>
 	<properties>
-		<java.version>8</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -43,7 +43,7 @@
 		</dependency>
 	</dependencies>
 
-	<build>
+	<build>Ge
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
